@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Home - Portafolio
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero align-items-stretch">
+  <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+    <img class="hero-imagen-desarrollador rounded-circle" 
+         src="{% static 'img/d012ae6c-dc70-4d0c-8cfc-f1c40533fc65.jpg' %}" 
+         alt="Foto de Francisco Eduardo">
+    <h1>Hello, I'm Francisco Eduardo</h1>
+
+    <!-- JavaScript animation -->
+    <h2 class="text-primary mb-4" id="typewriter"></h2>
+  </div>
+  <div class="hero-inferior">
+    <img class="hero-inferior-imagen img-fluid" 
+         src="{% static '/img/hero-inferior.svg' %}" 
+         alt="Monitor, laptop and logos of HTML, CSS, JavaScript and React.">
+  </div>
+</section>
+
+<!-- About Me -->
+<section id="sobre-mi" class="sobre-mi seccion-oscura" 
+         style="background-image: url('{% static 'img/fondo-sobre-mi.jpg' %}');">
+  <div class="contenedor">
+    <h2 class="seccion-titulo">Meet Francisco Eduardo</h2>
+    <p class="seccion-texto">
+      I am a full-stack developer with over three years of experience creating scalable web and mobile solutions.
+      My focus is on building dynamic and functional applications, both front-end and back-end, using technologies
+      such as JavaScript, React, Vue.js, Node.js, Django, and Flutter. I specialize in offering solutions tailored
+      to client needs, always ensuring products are easy to maintain and scale. Additionally, I have experience in
+      Linux environments, which allows me to manage servers efficiently. My passion for technology motivates me to
+      constantly learn and continue improving my skills to create products that improve the user experience.
+    </p>
+  </div>
+</section>
+{% endblock %}
