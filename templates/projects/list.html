@@ -1,3 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Projects - Portafolio
+{% endblock %}
+
+{% block content %}
 <!-- Proyectos -->
 <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
     <h2 class="seccion-titulo texto-negro">My recent projects</h2>
@@ -8,7 +16,7 @@
         <!-- Proyecto 1 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="proyecto">
-            <img src="imagenes/proyecto1.png" alt="Proyecto 1" loading="lazy">
+            <img src="{% static 'img/proyecto1.png' %}" alt="Proyecto 1" loading="lazy">
             <div class="overlay">
               <p>Website for Business</p>
               <div class="iconos-contenedor">
@@ -25,14 +33,14 @@
         <!-- Proyecto 2 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="proyecto">
-            <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+            <img src="{% static 'img/proyecto2.png' %}" alt="Proyecto 2" loading="lazy">
             <div class="overlay">
               <p>Website for Selling 3D Designs</p>
               <div class="iconos-contenedor">
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-github"></i>
                 </a>
-                <a href="#/" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-laptop"></i>
                 </a>
               </div>
@@ -42,14 +50,14 @@
         <!-- Proyecto 3 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="proyecto">
-            <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+            <img src="{% static 'img/proyecto3.png' %}" alt="Proyecto 3" loading="lazy">
             <div class="overlay">
-              <p>Mobile App for Product Management </p>
+              <p>Mobile App for Product Management</p>
               <div class="iconos-contenedor">
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-github"></i>
                 </a>
-                <a href="#/" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-laptop"></i>
                 </a>
               </div>
@@ -59,7 +67,7 @@
         <!-- Proyecto 4 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="proyecto">
-            <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+            <img src="{% static 'img/proyecto4.png' %}" alt="Proyecto 4" loading="lazy">
             <div class="overlay">
               <p>Travel Agency Website</p>
               <div class="iconos-contenedor">
@@ -76,7 +84,7 @@
         <!-- Proyecto 5 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="proyecto">
-            <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+            <img src="{% static 'img/proyecto5.png' %}" alt="Proyecto 5" loading="lazy">
             <div class="overlay">
               <p>Software for Designing Custom Posters</p>
               <div class="iconos-contenedor">
@@ -93,7 +101,7 @@
         <!-- Proyecto 6 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="proyecto">
-            <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+            <img src="{% static 'img/proyecto6.png' %}" alt="Proyecto 6" loading="lazy">
             <div class="overlay">
               <p>Website for Booking Cabins</p>
               <div class="iconos-contenedor">
@@ -115,4 +123,5 @@
         <i class="bi bi-arrow-right-circle-fill"></i>
       </button>
     </a>
-  </section>
+</section>
+{% endblock %}

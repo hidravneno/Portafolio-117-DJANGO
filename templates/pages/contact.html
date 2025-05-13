@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Contact - Portafolio
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                    Let's talk!
+                </div>
+                <div class="col-12 col-md-4 descripcion">
+                    Contact me to start your web development project and I'll make your vision a reality.
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="mailto:aramburoeduardo972@gmail.com">
+                        <button type="button">
+                            Contact
+                            <i class="bi bi-envelope-check-fill"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock %}
